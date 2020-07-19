@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        .phone1 {
+            height: 100px;
+            background: red;
+        }
+
+        .phone2 {
+            height: 100px;
+            background: green;
+            position: absolute;
+            z-index: 1;
+            /* 层级属性 */
+        }
+
+        .phone3 {
+            height: 100px;
+            background: blue;
+            position: absolute;
+        }
+
+        .parent {
+            height: 500px;
+            width: 500px;
+            background: blue;
+            position: relative;
+
+        }
+
+        .child {
+            height: 100px;
+            background: red;
+            width: 100px;
+            position: absolute;
+            left: 0;
+            top: 0px;
+        }
+        .box{
+            padding: 50px;
+            background: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="phone1"> Mate20</div>
+    <div class="phone2"> Mate30</div>
+    <div class="phone3"> Mate40</div> -->
+    <div class="box">
+        <div class="parent"> 我是父元素
+            <div class="child">我是子元素</div>
+        </div>
+
+    </div>
+ 
+</body>
+
+</html>

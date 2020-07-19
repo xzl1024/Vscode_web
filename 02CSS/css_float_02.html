@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .box {
+            border: 1px solid #000;
+            width: 500px;
+            /* height: 50px; */
+            overflow: hidden;
+        }
+
+        .left {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            float: left;
+        }
+
+        .right {
+            width: 200px;
+            height: 200px;
+            background: green;
+            float: right;
+        }
+
+        .clear {
+            clear: both;
+            /* 解决父元素塌陷的问题 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">我是正在游泳的left</div>
+        <div class="right">我是正在游泳的right</div>
+        <div class="clear"></div>
+    </div>
+    <div class="box">
+        华为云用在线的方式将华为30多年在ICT基础设施领域的技术积累和产品解决方案开放给客户，致力于提供稳定可靠、安全可信、可持续创新的云服务，做智能世界的“黑土地”，推进实现“用得起、用得好、用得放心”的普惠AI。华为云作为底座，为华为全栈全场景AI战略提供强大的算力平台和更易用的开发平台。
+    </div>
+</body>
+
+</html>

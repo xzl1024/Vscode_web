@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.parseInt(变量) 得到的整数
+        console.log(parseInt('3.14')); //3
+        console.log(parseInt('130px')); //130 去掉字母
+        console.log(parseInt('gt3.14a')); //NaN
+        console.log(parseInt('3.14')); //3 
+        //2.ParseFloat(变量)
+        console.log(parseFloat('3.14')); //3.14
+        console.log(parseFloat('130.1px')); //130.1
+        console.log(parseFloat('HG425.5SD')); //NaN
+        //3.Number()强制转换
+        var str = '123';
+        console.log(Number(str));
+        console.log(Number('12'));
+        //4.利用- * / 隐式转换
+        console.log('12' - 0);
+        console.log('123' - '120');
+        console.log('123' * 1);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

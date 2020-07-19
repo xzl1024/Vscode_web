@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        /* p[title]{color:tomato;} */
+        p[title="huawei"] {
+            color: turquoise;
+        }
+
+        /* p[title~="hua"]{color: violet;} ~=包含一个独立的属性值 */
+        /* p[title|="hua"]{color: yellow;}|=必须是前缀 必须要有中横线 或者只有这几个字母 */
+        /* 注意顺序： */
+        a:link {
+            color: springgreen;
+        }
+
+        a:visited {color: violet;}
+        a:hover {color: tomato;}
+        a:active {color: springgreen;}
+    </style>
+</head>
+
+<body>
+    <p title="hua-wei hua "> 华为云在线教育</p>
+    <a href="https://www.huawei.com">华为</a>
+
+</body>
+
+</html>

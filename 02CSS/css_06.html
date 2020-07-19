@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>派生选择器</title>
+    <STYle>
+        span {
+            color: springgreen;
+        }
+
+        /* p span{color: steelblue;} */
+        /* p>span {
+            color: yellow;
+        } */
+        span+span {
+            color: blue;
+        }
+        div+p {color: brown;}
+    </STYle>
+</head>
+
+<body>
+    <div>华为云：<span>HCIA认证</span></div>
+    <p>华为云: 
+        <span>HCIP认证 <span>孙子span</span></span>
+        <span>HCIE认证</span>
+    </p>
+
+</body>
+
+</html>
